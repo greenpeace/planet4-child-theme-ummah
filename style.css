@@ -16,7 +16,6 @@ Text Domain: planet4-child-theme-ummah
   display: none;
 }
 
-
 nav#header {
   background-color: white;
 }
@@ -29,10 +28,11 @@ a.site-logo img {
   height: 4rem;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .top-navigation {
     height: 5rem;
   }
+
   a.site-logo img {
     height:5rem;
   }
@@ -44,12 +44,16 @@ a.site-logo img {
   html[dir="rtl"] a.site-logo {
     padding-right: 15px;
   }
-  
+
+  .navbar-dropdown {
+    justify-content: flex-start;
+  }
+
   .top-navigation a.nav-link {
     color: white;
-	}
-	
-	.btn-navbar-toggle {
+  }
+
+  .btn-navbar-toggle {
     background-color: #074365;
     border-radius: 0;
     border: 1px solid transparent;
