@@ -7,8 +7,8 @@
 		{% set search_label = __( 'Search', 'planet4-master-theme' ) %}
 		<button
 			class="btn btn-navbar-toggle navbar-dropdown-toggle"
-			data-toggle="open"
-			data-target="#navbar-dropdown"
+			data-bs-toggle="open"
+			data-bs-target="#navbar-dropdown"
 			aria-expanded="false"
 			aria-label="{{ toggle_label }}">
 			<span
@@ -61,14 +61,14 @@
 		</ul>
 		<button
 			class="navbar-search-toggle"
-			data-toggle="open"
-			data-target="#search_form"
+			data-bs-toggle="open"
+			data-bs-target="#search_form"
 			aria-expanded="false"
 			aria-label="{{ data_nav_bar.navbar_search_toggle }}"
 			data-ga-category="Menu Navigation"
 			data-ga-action="Open Search"
 			data-ga-label="{{ page_category }}">
-				<span class="screen-reader-text">{{ __( 'Toggle search form', 'planet4-master-theme' ) }}</span>
+				<span class="visually-hidden">{{ __( 'Toggle search form', 'planet4-master-theme' ) }}</span>
 		</button>
 		<form id="search_form" action="{{ data_nav_bar.home_url }}" class="form nav-item nav-search-wrap">
 			<input id="search_input" type="search" class="form-control" placeholder="{{ search_label }}"
@@ -84,7 +84,7 @@
 					{% set data_ga_attrs = 'data-ga-category="Menu Navigation" data-ga-action="Search" data-ga-label="' ~ page_category ~ '"' %}
 					{{ search_icon|replace({'<svg': "<svg " ~ data_ga_attrs })|raw }}
 				<span
-					class="screen-reader-text"
+					class="visually-hidden"
 					data-ga-category="Menu Navigation"
 					data-ga-action="Search"
 					data-ga-label="{{ page_category }}">
