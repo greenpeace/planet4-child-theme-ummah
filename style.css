@@ -24,6 +24,11 @@ nav#header {
   color: #1c4262;
 }
 
+.top-navigation a.nav-link:hover {
+  color: #1c4262;
+  text-decoration: underline;
+}
+
 a.site-logo img {
   height: 4rem;
 }
