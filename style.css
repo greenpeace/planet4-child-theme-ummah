@@ -12,87 +12,11 @@ Tags: light, accessibility-ready
 Text Domain: planet4-child-theme-ummah
 */
 
-.donate-nav-item {
+.nav-donate,
+.country-selector-toggle-container {
   display: none;
-}
-
-nav#header {
-  background-color: white;
-}
-
-.top-navigation a.nav-link {
-  color: #1c4262;
-}
-
-.top-navigation a.nav-link:hover {
-  color: #1c4262;
-  text-decoration: underline;
 }
 
 a.site-logo img {
   height: 4rem;
-}
-
-@media only screen and (max-width: 575px) {
-  .block-header {
-    margin-top: 40px
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  .top-navigation {
-    height: 5rem;
-  }
-
-  a.site-logo img {
-    height:5rem;
-  }
-
-  a.site-logo {
-    padding-right: 1.5em;
-  }
-
-  html[dir="rtl"] a.site-logo {
-    padding-right: 15px;
-  }
-
-  .navbar-dropdown {
-    justify-content: flex-start;
-  }
-
-  .top-navigation a.nav-link {
-    color: white;
-  }
-
-  .btn-navbar-toggle {
-    background-color: #074365;
-    border-radius: 0;
-    border: 1px solid transparent;
-    box-shadow: 0 2px 5px rgba(0,0,0,.25);
-  }
-}
-
-@media (min-width: 992px) {
-  .navbar-dropdown {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-flex: 1;
-    flex-grow: 1;
-    -webkit-box-pack: justify;
-    justify-content: left!important;
-    padding: 0;
-  }
-
-  .nav-item.wpml-ls-item {
-    margin-left:0;
-    margin-right:20px
-  }
-
-  .top-navigation a.nav-link {
-    padding:10px;
-  }
-
-  .navbar-dropdown .nav-item {
-    padding: 0 15px;
-  }
 }
