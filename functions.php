@@ -20,7 +20,7 @@ for(i=0;i<8;i++)o[l[i]]=o(l[i]);w[n]=o}
         <?php
     }
 }
-add_action('wp_footer', 'add_inline_script_for_specific_page');
+add_action('wp_head', 'add_inline_script_for_specific_page');
 
 add_action( 'wp_enqueue_scripts', 'enqueue_child_styles', 99);
 
